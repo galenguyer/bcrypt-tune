@@ -4,12 +4,13 @@ authors = ["Galen Guyer <galen@galenguyer.com>"]
 description = "A small utility to benchmark the bcrypt crate with different weights"
 license = "MIT"
 repository = "https://github.com/galenguyer/bcrypt-tune"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bcrypt = "0.12.1"
-chrono = "0.4.19"
+bcrypt = "0.13.0"
+chrono = "0.4.23"
+clap = { version = "4.1.2", features = ["cargo", "derive"] }
 human-duration = "0.1.0"
